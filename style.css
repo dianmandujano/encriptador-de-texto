@@ -1,0 +1,121 @@
+*{  
+    background-color: #030303;
+    font-family: "Shadows Into Light", cursive;
+    font-style:normal;
+    font-size: xx-large;
+    font-style: normal;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+
+
+.Logo{
+    background-image: none;
+    width: 10%;
+}
+  
+
+main{
+    background-image: none;
+    display: flex;
+    margin-bottom: 800px;
+    margin-left: 400px;
+}
+
+.text__area{
+    background-image: url(/imagenes/lucy.jpg);
+    border: solid aqua;
+    color: #da8fc7;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-transform: lowercase;
+    text-align: center;
+    gap: 20px;
+    width: 80%;
+    height: 80%;
+    padding: 8%;
+
+
+}
+ 
+.Informacion{
+    background-image: none;
+    color: #e9f2c5;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 32%;
+   
+}
+
+::placeholder {color:#fbf9fb;}
+   
+.text__area2{
+    background-image: url(/imagenes/fondo.jpg);
+    background-color: #cd91bc;
+    border: solid aqua;
+    color: #e28acc;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-transform: lowercase;
+    text-align: center;
+    gap: 20px;
+    width: 85%;
+    height: 85%;
+    padding: 10%;
+    
+}
+    
+.botones {
+    display: flex;
+    margin-top: 18px;  
+}
+
+
+.boton__cifrar{
+    background-image: none;
+    background-color: #190639;
+    border: 1px solid aqua;
+    border-radius: 50px;
+    color: #eceff4;
+    cursor:pointer;
+    height: 60px;
+    width: 300px;
+
+}
+
+.boton__decifrar{
+    background-image: none;
+    background-color: #190639;
+    border: 1px solid aqua;
+    border-radius: 50px;
+    color: #eceff4;
+    cursor:pointer;
+    height: 60px;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.boton__copiar{
+    background-image: none;
+    background-color: #190639;
+    border: 1px solid aqua;
+    border-radius: 50px;
+    color: #eceff4;
+    cursor:pointer;
+    height: 60px;
+    width: 300px;
+
+
+}
+
+.Poema{
+    background-color: #cd91bc;
+    color: #050505;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:medium;
+}
