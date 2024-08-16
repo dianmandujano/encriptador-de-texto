@@ -1,39 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es_mx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <title>Encriptador de texto Diana Itzel</title>
-    <script src="./script.js"></script>
+    <title>Encriptador de Texto Diana</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="/script.js"></script>
 </head>
 <body>
-    <header>
-        <img class="Logo" src="/imagenes/Logo.png" alt="Logo de Alura">
-        
-    </header>
-    <main>
-        <section>
-           <input id="text_area" class="text__area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-           <div>
-            <h6 class="Informacion">Solo letras minusculas y sin acentos</h6>
-           </div>
-           <div class="Botones">
-            <button id="boton_cifrar" class="boton__cifrar" onclick="botonEncriptar()">Encriptar</button>
-            <button id="boton_decrypt" class="boton__decifrar">Desencriptar</button>
-           </div>
-        </section>
- 
-        <section>
-            <input id="text_area_1" class="text__area2" cols="30" rows="10"></textarea>
-            <div>
-                <button class="boton__copiar">Copiar</button>
-            </div>
-        </section>
-    </main>
-    <footer class="Poema">"Dale vida a tus sueños y el viento te dirá los secretos que ha guardado para ti"</footer>
+    <section id="zona__logo">
+        <img class="zona__logo--imagen" src="./imagenes/Logo.png" alt="Logo de Alura">
+        <h1 class="Informacion">Desarrollado por Diana Itzel</h1>
+    </section>
+    <section id="entrada">
+        <textarea placeholder="Inserta el texto aquí..." name="caja de entrada" id="input" spellcheck="false"></textarea>
+        <h2>Solo</h2>
+        <h3>minusculas</h3>
+        <h4>y</h4>
+        <h5>sin</h5>
+        <h6>acentos</h6>
+        <div class="entrada__area-botones">
+            <button class="entrada__area-botones--boton" onclick="encriptar()">Encriptar</button>
+            <button class="entrada__area-botones--boton" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </section>
+    <section id="salida">
+        <div id="output"></div>
+        <div class="salida__area-botones">
+            <button class="salida__area-botones--boton" onclick="copiar()">Copiar</button>
+        </div>
+    </section>
 </body>
 </html>

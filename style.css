@@ -1,121 +1,122 @@
-*{  
-    background-color: #030303;
+* {
+    background-color:  rgb(207, 134, 164);;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Shadows Into Light", cursive;
-    font-style:normal;
-    font-size: xx-large;
-    font-style: normal;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
-
-
-.Logo{
-    background-image: none;
-    width: 10%;
-}
-  
-
-main{
-    background-image: none;
-    display: flex;
-    margin-bottom: 800px;
-    margin-left: 400px;
-}
-
-.text__area{
-    background-image: url(/imagenes/lucy.jpg);
-    border: solid aqua;
-    color: #da8fc7;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-transform: lowercase;
-    text-align: center;
-    gap: 20px;
-    width: 80%;
-    height: 80%;
-    padding: 8%;
-
-
-}
- 
-.Informacion{
-    background-image: none;
-    color: #e9f2c5;
     font-size: small;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 32%;
-   
+    color: rgb(155, 102, 168);
+
 }
 
-::placeholder {color:#fbf9fb;}
-   
-.text__area2{
-    background-image: url(/imagenes/fondo.jpg);
-    background-color: #cd91bc;
-    border: solid aqua;
-    color: #e28acc;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-transform: lowercase;
-    text-align: center;
-    gap: 20px;
-    width: 85%;
-    height: 85%;
-    padding: 10%;
-    
-}
-    
-.botones {
+body {
     display: flex;
-    margin-top: 18px;  
+    background-color:   rgb(207, 134, 164);
 }
 
-
-.boton__cifrar{
-    background-image: none;
-    background-color: #190639;
-    border: 1px solid aqua;
-    border-radius: 50px;
-    color: #eceff4;
-    cursor:pointer;
-    height: 60px;
-    width: 300px;
-
+#zona__logo {
+    width: 8vw;
+    height: 100vh;
 }
 
-.boton__decifrar{
-    background-image: none;
-    background-color: #190639;
-    border: 1px solid aqua;
-    border-radius: 50px;
-    color: #eceff4;
-    cursor:pointer;
-    height: 60px;
-    width: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
-
-.boton__copiar{
-    background-image: none;
-    background-color: #190639;
-    border: 1px solid aqua;
-    border-radius: 50px;
-    color: #eceff4;
-    cursor:pointer;
-    height: 60px;
-    width: 300px;
-
-
-}
-
-.Poema{
-    background-color: #cd91bc;
-    color: #050505;
+.Informacion{
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:medium;
+}
+
+/* AREA DE ENTRADA */
+
+#entrada {
+    background-color:  rgb(207, 134, 164);
+    box-sizing: content-box;
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+#input {
+    background-image: url(/imagenes/StTN.gif);
+    background-position: center;
+    background-size: cover;
+    background-color:  rgb(248, 169, 208);
+    font-family: "Shadows Into Light", cursive;
+    color: aqua;
+    font-size: medium;
+    text-align: center;
+    width: 75%;
+    height: 80%;
+    border: 10px solid  rgb(155, 102, 168);
+    padding: 1vw;
+}
+
+#input::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+
+}
+
+.entrada__area-botones {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada__area-botones--boton {
+    background-color: rgb(239, 229, 174);
+    color: rgb(155, 102, 168);
+    border: 5px solid rgb(155, 102, 168);
+    border-style:outset;
+    width: 18vw;
+    padding: 1vh;
+    transition: border-color 0.3s ease;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.entrada__area-botones--boton:hover {
+    border-color: #ffffff;
+
+
+    /* AREA DE SALIDA */
+}
+
+#salida {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: vh;
+}
+
+#output {
+    background-image: url(/imagenes/14Sj.gif);
+    background-position: top;
+    background-repeat: no repeat;
+    background-size: cover;
+    color: aqua;
+    text-align: center;
+    font-size: medium;
+    width: 60%;
+    height: 70%;
+
+   
+}
+
+.salida__area-botones--boton {
+    background-color: rgb(239, 229, 174);
+    color: rgb(155, 102, 168);
+    border: 5px solid rgb(155, 102, 168);
+    border-style:outset;
+    width: 10vw;
+    padding: 1vh;
+    font-size: 2rem;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.salida__area-botones--boton:hover {
+    border-color: #ffffff;
 }
