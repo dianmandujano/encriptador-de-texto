@@ -3,7 +3,7 @@
     box-sizing: border-box;
     font-family: "Shadows Into Light", cursive;
     font-size: 1rem;
-    color: rgb(155, 102, 168);
+    color: #ffffff; 
 }
 
 body {
@@ -17,35 +17,34 @@ body {
     height: auto;
 }
 
-.Informacion{
-    text-align: center;
-}   
-
 /* AREA DE ENTRADA */
 
 .entrada {
     background-color:  rgb(207, 134, 164);
     box-sizing: content-box;
+    width: 100vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0;
+    display: flex;
 }
 
 #input {
     background-image: url(/imagenes/StTN.gif);
     background-position: center;
     background-size: cover;
-    background-color:  rgb(248, 169, 208);
     font-family: "Shadows Into Light", cursive;
+    width: 100%;
+    height: 40%;
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
-    text-align: left;
-    width: 180%;
-    height: 50%;
-    border: 10px solid  rgb(155, 102, 168);
+    text-align: center;
+    border: 10px solid  #ffffff; 
+    border-style: outset;
     padding: 1vw;
+    display: flex;
 }
 
 #input::placeholder {
@@ -63,7 +62,7 @@ body {
 .entrada__area-botones--boton {
     background-color: rgb(239, 229, 174);
     color: rgb(155, 102, 168);
-    border: 5px solid rgb(155, 102, 168);
+    border: 5px solid #ffffff; 
     border-style:outset;
     padding: 1vh;
     font-size: 1.5rem;
@@ -72,7 +71,7 @@ body {
 }
 
 .entrada__area-botones--boton:hover {
-    border-color: #ffffff;
+    border-color: rgb(155, 102, 168);
 
 
     /* AREA DE SALIDA */
@@ -80,32 +79,39 @@ body {
 
 .salida {
     background-color:  rgb(207, 134, 164);
-    box-sizing: content-box;
+    box-sizing:border-box;
+    width: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1px;
+    gap: 0;
+    display: flex;
 }
 
 .output_{
-    background-color: none;
+    background-image: url(imagenes/XZ5V.gif);
+    font-family: "Shadows Into Light", cursive;
+    width: 100%;
+    height: 40%;
+    color: rgb(0, 0, 0);
     border: none;
-    width: 200%;
-    height: 5%;
-    color: aqua;
+    font-size: 1.5rem;
     text-align: center;
+    padding: 1vw;
+    display: flex;
 }
 
 .pusheen{
-    width: 150%;
-    height: 60%;
+    width: 160px;
+    height: 140px;
 }
 
 
 .salida__area-botones--boton {
     background-color: rgb(239, 229, 174);
     color: rgb(155, 102, 168);
-    border: 5px solid rgb(155, 102, 168);
+    border: 5px solid #ffffff; 
     border-style:outset;
     padding: 1vh;
     font-size: 1.5rem;
@@ -113,15 +119,24 @@ body {
 }
 
 .salida__area-botones--boton:hover {
-    border-color: #ffffff;
+    border-color: rgb(155, 102, 168);
 }
+
+.Informacion{
+    background-color: rgb(8, 41, 79);
+    border-color: black;
+    color: #ffffff;
+    text-align: center;
+}   
+
 
 
 /* Responsividad*/
+
 @media (min-width: 480px) {
     .wraper {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 10%;
         justify-content: space-between;
     }
