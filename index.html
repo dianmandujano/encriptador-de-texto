@@ -8,27 +8,24 @@
     <script src="/script.js"></script>
 </head>
 <body>
-    <section id="zona__logo">
-        <img class="zona__logo--imagen" src="./imagenes/Logo.png" alt="Logo de Alura">
-        <h1 class="Informacion">Desarrollado por Diana Itzel</h1>
-    </section>
-    <section id="entrada">
+    <div class="wraper">
+    <div class="entrada">
         <textarea placeholder="Inserta el texto aquí..." name="caja de entrada" id="input" spellcheck="false"></textarea>
-        <h2>Solo</h2>
-        <h3>minusculas</h3>
-        <h4>y</h4>
-        <h5>sin</h5>
-        <h6>acentos</h6>
+        <h2>Solo letras minusculas y sin acentos</h2>
+        <img class="zona__logo--imagen" src="./imagenes/Logo.png" alt="Logo de Alura">
+            <h1 class="Informacion">Desarrollado por Diana Itzel</h1>
         <div class="entrada__area-botones">
             <button class="entrada__area-botones--boton" onclick="encriptar()">Encriptar</button>
             <button class="entrada__area-botones--boton" onclick="desencriptar()">Desencriptar</button>
         </div>
-    </section>
-    <section id="salida">
-        <div id="output"></div>
+    </div>
+    <div class="salida">
+        <input class="output_" name="caja de salida" id="output" type="text" disabled="true" />
+        <img class="pusheen" src="./imagenes/14Sj.gif" />
         <div class="salida__area-botones">
             <button class="salida__area-botones--boton" onclick="copiar()">Copiar</button>
         </div>
-    </section>
+    </div>
+</div>
 </body>
 </html>

@@ -1,39 +1,36 @@
 * {
     background-color:  rgb(207, 134, 164);;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Shadows Into Light", cursive;
-    font-size: small;
+    font-size: 1rem;
     color: rgb(155, 102, 168);
-
 }
 
 body {
-    display: flex;
     background-color:   rgb(207, 134, 164);
+    font-size: 1rem;
+    
 }
 
 #zona__logo {
-    width: 8vw;
-    height: 100vh;
+    max-width: 100%;
+    height: auto;
 }
 
 .Informacion{
     text-align: center;
-}
+}   
 
 /* AREA DE ENTRADA */
 
-#entrada {
+.entrada {
     background-color:  rgb(207, 134, 164);
     box-sizing: content-box;
-    width: 60vw;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20vh;
+    gap: 0;
 }
 
 #input {
@@ -42,11 +39,11 @@ body {
     background-size: cover;
     background-color:  rgb(248, 169, 208);
     font-family: "Shadows Into Light", cursive;
-    color: aqua;
-    font-size: medium;
-    text-align: center;
-    width: 75%;
-    height: 80%;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-align: left;
+    width: 180%;
+    height: 50%;
     border: 10px solid  rgb(155, 102, 168);
     padding: 1vw;
 }
@@ -58,9 +55,9 @@ body {
 }
 
 .entrada__area-botones {
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .entrada__area-botones--boton {
@@ -68,11 +65,10 @@ body {
     color: rgb(155, 102, 168);
     border: 5px solid rgb(155, 102, 168);
     border-style:outset;
-    width: 18vw;
     padding: 1vh;
-    transition: border-color 0.3s ease;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
+    gap:1px;
 }
 
 .entrada__area-botones--boton:hover {
@@ -82,41 +78,60 @@ body {
     /* AREA DE SALIDA */
 }
 
-#salida {
-    width: 40vw;
+.salida {
+    background-color:  rgb(207, 134, 164);
+    box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: vh;
+    gap: 1px;
 }
 
-#output {
-    background-image: url(/imagenes/14Sj.gif);
-    background-position: top;
-    background-repeat: no repeat;
-    background-size: cover;
+.output_{
+    background-color: none;
+    border: none;
+    width: 200%;
+    height: 5%;
     color: aqua;
     text-align: center;
-    font-size: medium;
-    width: 60%;
-    height: 70%;
-
-   
 }
+
+.pusheen{
+    width: 150%;
+    height: 60%;
+}
+
 
 .salida__area-botones--boton {
     background-color: rgb(239, 229, 174);
     color: rgb(155, 102, 168);
     border: 5px solid rgb(155, 102, 168);
     border-style:outset;
-    width: 10vw;
     padding: 1vh;
-    font-size: 2rem;
-    transition: border-color 0.3s ease;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
 .salida__area-botones--boton:hover {
     border-color: #ffffff;
+}
+
+
+/* Responsividad*/
+@media (min-width: 480px) {
+    .wraper {
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .wraper {
+        display: flex;
+        flex-direction: row;
+        padding: 10%;
+        justify-content: space-between;
+    }
 }

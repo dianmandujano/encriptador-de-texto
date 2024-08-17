@@ -7,28 +7,28 @@
 function encriptar() {
     let texto = document.getElementById("input").value;
     let textoEncriptado = texto
-        .replace(/e/g, "enter")
-        .replace(/i/g, "imes")
-        .replace(/a/g, "ai")
-        .replace(/o/g, "ober")
-        .replace(/u/g, "ufat");
+        .replace("e", "enter")
+        .replace("i", "imes")
+        .replace("a", "ai")
+        .replace("o", "ober")
+        .replace("u", "ufat");
     
-    document.getElementById("output").innerText = textoEncriptado;
+    document.getElementById("output").value = textoEncriptado;
 }
 
 function desencriptar() {
     let texto = document.getElementById("input").value;
     let textoDesencriptado = texto
-        .replace(/enter/g, "e")
-        .replace(/imes/g, "i")
-        .replace(/ai/g, "a")
-        .replace(/ober/g, "o")
-        .replace(/ufat/g, "u");
+        .replace("enter", "e")
+        .replace("imes", "i")
+        .replace("ai", "a")
+        .replace("ober", "o")
+        .replace("ufat", "u");
     
-    document.getElementById("output").innerText = textoDesencriptado;
+    document.getElementById("output").value = textoDesencriptado;
 }
 
 function copiar() {
-    let resultado = document.getElementById("output").innerText;
+    let resultado = document.getElementById("output").value;
     navigator.clipboard.writeText(resultado);
 }
